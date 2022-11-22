@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+:root{
+        --headercolor: #13293d;
+        --headercolorhover: #005850;
+        --bodycolor:#fff;
+        --headerfontcolor: #f0f0f0;
+        --bodyfontcolor: #054861;
+    
+    font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", FontAwesome;
+    font-size: 1rem;
+    font-weight: normal;
+    background-color: var(--bodycolor);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{scroll-behavior: smooth;}
+
+#header{
+    width: 90vw;
+    min-height: 80vh;
+    margin: 2% auto;
+    border: 1px solid #11114e;
+    border-radius: .5rem;
+    padding: 1rem;
+    /* background-image: radial-gradient(circle, #054861 0%, #13293d 100%); */
+}
+#about{
+    width: 90vw;
+    min-height: 80vh;
+    padding: 1rem;
+    margin: 2% auto;
+}
+
+main .socials{
+    display: flex;
+    flex-direction: row;
+}
+
+main .socials a{
+    text-transform: none;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: .5rem .5rem 0 .5rem;
+    font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", FontAwesome;
+    color: var(--headercolor);
+}
+
+main .socials a:hover{
+    color: var(--headercolorhover);
+    -webkit-transition: all .5s ease-in;
+    -moz-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+main img{
+    max-width: 20rem;
+    max-height: 20rem;
+}
+main img.about{
+    max-width: 3rem;
+    max-height: 3rem;
+    border-radius: 50%;
+    margin: 0.1rem;
+}
+
+footer{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin-bottom: 0;
+}
